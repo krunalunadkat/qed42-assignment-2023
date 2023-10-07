@@ -1,0 +1,11 @@
+'delete city entity':
+  title: Delete city content.
+'add city entity':
+  title: Add city content
+'view city entity':
+  title: View city content
+'edit city entity':
+  title: Edit city content
+'administer city entity':
+  title: Administer settings
+  

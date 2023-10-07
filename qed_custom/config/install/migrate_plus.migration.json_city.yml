@@ -1,0 +1,25 @@
+id: json_city 
+label: JSON city Migration 
+Group: cusstom_migration 
+source: 
+  plugin: file
+  path: 'modules/custom/qed_custom/data/cities.json'
+  header_row_count: 0
+
+process: 
+  type: 
+    plugin: default_value 
+    default_value: city
+  cityid: _id
+  name: city
+  loc:
+    plugin: explode
+    source: loc
+    delimiter: ,
+  pop: pop
+  state: state
+  created: date
+  changed: date
+
+destination: 
+  plugin: entity:qed_entity_city_settings 

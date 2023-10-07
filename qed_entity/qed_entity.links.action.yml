@@ -1,0 +1,6 @@
+qed_entity.city_add:
+  route_name: qed_entity.city_add
+  title: 'Add City'
+  appears_on:
+    - entity.qed_entity_city.collection
+    - entity.qed_entity_city.canonical

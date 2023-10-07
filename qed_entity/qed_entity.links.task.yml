@@ -1,0 +1,20 @@
+city.settings_tab:
+  route_name: qed_entity.city_settings
+  title: Settings
+  base_route: qed_entity.city_settings
+
+city.view:
+  route_name: entity.qed_entity_city.canonical
+  base_route: entity.qed_entity_city.canonical
+  title: View City
+
+city.page_edit:
+  route_name: entity.qed_entity_city.edit_form
+  base_route: entity.qed_entity_city.canonical
+  title: Edit City
+
+city.delete_confirm:
+  route_name:  entity.qed_entity_city.delete_form
+  base_route:  entity.qed_entity_city.canonical
+  title: Delete CIty
+  weight: 10

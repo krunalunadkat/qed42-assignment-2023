@@ -1,0 +1,10 @@
+name: QED42 Migrate
+type: module
+description: Migrate city data from json file.
+core_version_requirement: ^8.8.0 || ^9.0
+package: Custom
+
+dependencies:
+  - drupal:migrate
+  - migrate_plus:migrate_plus
+  - migrate_tools:migrate_tools

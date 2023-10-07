@@ -1,0 +1,47 @@
+entity.qed_entity_city.canonical:
+  path: '/qed_entity_city/{qed_entity_city}'
+  defaults:
+    _entity_view: 'qed_entity_city'
+    _title: 'City Content'
+  requirements:
+    _entity_access: 'qed_entity_city.view'
+
+entity.qed_entity_city.collection:
+  path: '/qed_entity_city/list'
+  defaults:
+    _entity_list: 'qed_entity_city'
+    _title: 'City List'
+  requirements:
+    _permission: 'view city entity'
+
+qed_entity.city_add:
+  path: '/qed_entity_city/add'
+  defaults:
+    _entity_form: qed_entity_city.add
+    _title: 'Add City'
+  requirements:
+    _entity_create_access: 'qed_entity_city'
+
+entity.qed_entity_city.edit_form:
+  path: '/qed_entity_city/{qed_entity_city}/edit'
+  defaults:
+    _entity_form: qed_entity_city.edit
+    _title: 'Edit City'
+  requirements:
+    _entity_access: 'qed_entity_city.edit'
+
+entity.qed_entity_city.delete_form:
+  path: '/city/{qed_entity_city}/delete'
+  defaults:
+    _entity_form: qed_entity_city.delete
+    _title: 'Delete City'
+  requirements:
+    _entity_access: 'qed_entity_city.delete'
+
+qed_entity.city_settings:
+  path: 'admin/structure/qed_entity_city_settings'
+  defaults:
+    _form: '\Drupal\qed_entity\Form\CitySettingsForm'
+    _title: 'City Settings'
+  requirements:
+    _permission: 'administer city entity'

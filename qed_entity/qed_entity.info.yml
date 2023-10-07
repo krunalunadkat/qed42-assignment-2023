@@ -1,0 +1,8 @@
+name: QED42 entity
+type: module
+description: Creating module for the assigment.
+package: Custom
+core_version_requirement: ^8.8.0 || ^9.0
+dependencies:
+  - examples
+  - options
